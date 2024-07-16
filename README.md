@@ -7,3 +7,10 @@
 3. Builder
 4. Prototype
 5. Adapter
+6. Bridge
+7. Composite
+8. Decorator
+9. FlyWeight
+10. Proxy
+11. COR(Chain of Responsibility)
+12. Command -> Excute / Undo
