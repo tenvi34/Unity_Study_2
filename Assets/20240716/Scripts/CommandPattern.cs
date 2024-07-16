@@ -42,7 +42,7 @@ public class CommandManager
     
     private Stack<ICommand> History = new Stack<ICommand>();
 
-    public void Excute(ICommand command)
+    public void Execute(ICommand command)
     {
         command.SetOwner(Owner);
         command.Excute();
@@ -73,7 +73,7 @@ public class CommandPattern : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            _commandManager.Excute(new MoveCommand());
+            _commandManager.Execute(new MoveCommand());
         }
         
         if (Input.GetKeyDown(KeyCode.U))
