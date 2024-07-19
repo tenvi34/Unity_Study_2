@@ -20,4 +20,4 @@
 16. Strategy Pattern ( 전략 패턴 )
 17. Memento Pattern ( 롤백 관련 사용 )
 18. Mediator
-19. iterator Pattern - 행위 패턴(Behavior Pattern)
+19. iterator Pattern - 행위 패턴(Behavior Pattern) -> IEnumerator 와 유사
