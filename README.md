@@ -16,4 +16,4 @@
 12. Command -> Excute / Undo
 13. FSM(Finite State Machine)
 14. Reflection
-15. Observer
+15. Observer ( 자주 쓰임 / 중요 )
