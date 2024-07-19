@@ -20,6 +20,10 @@ public interface IMyState
 public abstract class VMyState : MonoBehaviour, IMyState
 {
     [NonSerialized]public StateMachine stateMachine;
+    
+    // HSFM 이용 할 시
+    public  StateMachine HSFM_StateMachine;
+    
     public abstract void  EnterState();
 
     public abstract void ExcuteState();
