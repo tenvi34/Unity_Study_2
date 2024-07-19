@@ -19,3 +19,4 @@
 15. Observer ( 자주 쓰임 / 중요 )
 16. Strategy Pattern ( 전략 패턴 )
 17. Memento Pattern ( 롤백 관련 사용 )
+18. Mediator
