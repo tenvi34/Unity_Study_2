@@ -15,3 +15,4 @@
 11. COR(Chain of Responsibility)
 12. Command -> Excute / Undo
 13. FSM(Finite State Machine)
+14. Reflection
