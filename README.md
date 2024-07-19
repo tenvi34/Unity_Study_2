@@ -17,3 +17,4 @@
 13. FSM(Finite State Machine)
 14. Reflection
 15. Observer ( 자주 쓰임 / 중요 )
+16. Strategy Pattern ( 전략 패턴 )
