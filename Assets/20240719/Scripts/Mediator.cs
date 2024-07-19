@@ -31,9 +31,34 @@ public class ChatRoom : IChatMediator
     }
 }
 
+
+public class PrivateChatRoom : IChatMediator
+{
+    private List<ChatMember> members = new List<ChatMember>();
+
+    public void AddMember(ChatMember member)
+    {
+        if (member.isPrivate)
+            members.Add(member);
+    }
+
+    public void SendMessage(string message, ChatMember sender)
+    {
+        foreach (var member in members)
+        {
+            // 메시지를 보낸 멤버를 제외한 모든 멤버에게 메시지 전달
+            if (member != sender)
+            {
+                member.ReceiveMessage(message, sender.Name);
+            }
+        }
+    }
+}
+
 // Colleague 클래스
 public abstract class ChatMember : MonoBehaviour
 {
+    public bool isPrivate;
     protected IChatMediator mediator;
     public string Name { get; private set; }
 
@@ -83,7 +108,7 @@ public class AI : ChatMember
 }
 
 // 사용 예시
-public class GameManager_3 : MonoBehaviour
+public class Mediator : MonoBehaviour
 {
     private IChatMediator chatRoom;
     private Player_3 Player_31;
